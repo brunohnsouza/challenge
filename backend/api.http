@@ -1,0 +1,40 @@
+# Criar uma nova tarefa
+POST http://localhost:3333/tasks
+Content-Type: application/json
+
+{
+    "title": "My task",
+    "description": "This is my task"
+}
+
+###
+
+# Listar todas as tarefas
+GET http://localhost:3333/tasks
+
+###
+
+# Alterar o status de uma tarefa (substitua `:id` pelo ID real)
+PATCH http://localhost:3333/tasks/:id/status
+Content-Type: application/json
+
+{
+    "status": "IN_PROGRESS" // Pode ser IN_PROGRESS, DONE ou PENDING (em maiúsculo)
+}
+
+###
+
+# Atualizar uma tarefa (substitua `:id` pelo ID real)
+PUT http://localhost:3333/tasks/:id
+Content-Type: application/json
+
+{
+    "title": "My task updated",
+    "description": "This is my task update",
+    "status": "IN_PROGRESS"
+}
+
+###
+
+# Deletar uma tarefa (substitua `:id` pelo ID real)
+DELETE http://localhost:3333/tasks/:id

@@ -2,12 +2,13 @@
 
 Este é o frontend de um sistema de **Gerenciamento de Tarefas**, desenvolvido em **React + Vite**, utilizando **shadcn/ui** para a interface e **Axios** para comunicação com a API.
 
+[demo.webm](https://github.com/user-attachments/assets/bb742fc3-671e-4175-84da-343236832bc8)
+
 ## Índice
 
 - [Ferramentas](#ferramentas)
 - [Instalação](#instalação)
 - [Funcionalidades](#funcionalidades)
-- [Layout](#layout)
 - [Licença](#licença)
 
 ## Ferramentas
@@ -20,6 +21,40 @@ Este é o frontend de um sistema de **Gerenciamento de Tarefas**, desenvolvido e
 
 ## Instalação
 
+Para rodar este projeto localmente, siga os passos abaixo:
+
+### 1. Clone o repositório
+
+Certifique-se de estar na branch correta (`minha-solucao`), pois é onde está a implementação da solução:
+
+```
+git clone -b minha-solucao https://github.com/brunohnsouza/challenge.git
+cd challenge/frontend
+```
+
+### 2. Instale as dependências
+
+```
+npm install
+```
+
+### 3. Configure as variávies de ambiente
+
+Crie um arquivo `.env` na raiz do diretório `frontend` e adicione a URL da API:
+
+```
+VITE_API_URL=http://localhost:3333
+```
+
+### 4. Execute o projeto
+
+Inicie o servidor de desenvolvimento:
+
+```
+npm run dev
+```
+
+Acesse http://localhost:5173 para visualizar a aplicação.
 
 ## Funcionalidades
 
